@@ -581,6 +581,17 @@ p {
     animation: fadeEffect 1s; /* Animação de transição suave */
 }
 
+.tabcontent ul{
+    padding: 0;
+    columns: 2;
+    column-gap: 20px;
+
+} 
+.tabcontent ul li{
+    padding: 10px 0;
+    margin-bottom: 5px;
+}
+
 @keyframes fadeEffect {
     from {opacity: 0;}
     to {opacity: 1;}
