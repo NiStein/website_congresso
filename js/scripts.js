@@ -35,24 +35,33 @@ function openTab(evt, tabName) {
 function atualizarValoresIngressos() {
     const dataAtual = new Date();
     
-    const lote1Fim = new Date('2024-09-30');
-    const lote2Inicio = new Date('2024-10-01');
-    const lote2Fim = new Date('2024-10-15');
-    const lote3Inicio = new Date('2024-10-16');
+    const lote1Fim = new Date('2024-10-31');
+    const lote2Inicio = new Date('2024-11-01');
+    const lote2Fim = new Date('2024-12-31');
+    const lote3Inicio = new Date('2025-01-01');
+    const lote3Fim = new Date('2025-02-28');
+    const lote4Inicio = new Date('2025-03-01');
+    const lote4Fim = new Date('2025-05-25')
     
     const estudanteBox = document.querySelector('.card.studant p');
     const demaisBox = document.querySelector('.card.entire p');
 
     
     if (dataAtual <= lote1Fim) {
-        estudanteBox.textContent = 'R$ 200,00';
-        demaisBox.textContent = 'R$ 350,00';
+        estudanteBox.textContent = 'R$ 130,00';
+        demaisBox.textContent = 'R$ 250,00';
     } else if (dataAtual >= lote2Inicio && dataAtual <= lote2Fim) {
+        estudanteBox.textContent = 'R$ 200,00';
+        demaisBox.textContent = 'R$ 300,00';
+    } else if (dataAtual >= lote3Inicio && dataAtual <= lote3Fim) {
         estudanteBox.textContent = 'R$ 250,00';
-        demaisBox.textContent = 'R$ 400,00';
-    } else if (dataAtual >= lote3Inicio) {
-        estudanteBox.textContent = 'R$ 300,00';
-        demaisBox.textContent = 'R$ 450,00';
+        demaisBox.textContent = 'R$ 350,00';
+    } else if (dataAtual >= lote4Fim && dataAtual <= lote4Fim) {
+        estudanteBox.textContent = 'R$ 300,00'
+        demaisBox.textContent = 'R$ 400,00'
+    } else if (dataAtual > lote4Fim) {
+        estudanteBox.textContent = 'Inscrições Encerradas'
+        demaisBox.textContent = 'Inscrições Encerradas'
     }
 };
 
@@ -71,7 +80,7 @@ function countdown(){
     initCountdown()
 
     function initCountdown() {
-    var countdownDate = "Sat Oct 26 2024 08:00:00 GMT-0300 (Hora padrão de Brasília)"
+    var countdownDate = "Tue May 27 2025 08:00:00 GMT-0300 (Hora padrão de Brasília)"
     
     interval = setInterval(() => updateCounter(new Date(countdownDate)), 1000);
     }
