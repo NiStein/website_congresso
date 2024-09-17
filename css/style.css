@@ -1214,3 +1214,98 @@ tbody tr:hover {
         min-width: 160px;
     }
 }
+
+#localizacao {
+    background: url("assets/fundo-info.jpeg") no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+#localizacao h2 {
+    margin: 0;
+    padding-bottom: 20px;
+    font-size: 2em;
+    color: white;
+}
+
+#localizacao iframe {
+    border: 0;
+    height: 100%;
+    max-height: 500px;
+}
+
+@media (max-width: 600px) {
+    #localizacao {
+        padding: 10px;
+    }
+
+    #localizacao h2 {
+        font-size: 1.5em;
+    }
+
+    #localizacao iframe {
+        height: 100%;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+    #localizacao {
+        padding: 15px;
+    }
+
+    #localizacao h2 {
+        font-size: 1.8em;
+    }
+
+    #localizacao iframe {
+        height: 80%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    #localizacao {
+        padding: 20px;
+    }
+
+    #localizacao h2 {
+        font-size: 2em;
+    }
+
+    #localizacao iframe {
+        height: 70%;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    #localizacao {
+        padding: 20px;
+    }
+
+    #localizacao h2 {
+        font-size: 2.2em;
+    }
+
+    #localizacao iframe {
+        height: 60%;
+    }
+}
+
+@media (min-width: 1201px) {
+    #localizacao {
+        padding: 20px;
+    }
+
+    #localizacao h2 {
+        font-size: 2.5em;
+    }
+
+    #localizacao iframe {
+        height: 50%;
+    }
+}
