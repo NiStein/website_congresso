@@ -56,7 +56,7 @@ function atualizarValoresIngressos() {
     } else if (dataAtual >= lote3Inicio && dataAtual <= lote3Fim) {
         estudanteBox.textContent = 'R$ 250,00';
         demaisBox.textContent = 'R$ 350,00';
-    } else if (dataAtual >= lote4Fim && dataAtual <= lote4Fim) {
+    } else if (dataAtual >= lote4Inicio && dataAtual <= lote4Fim) {
         estudanteBox.textContent = 'R$ 300,00'
         demaisBox.textContent = 'R$ 400,00'
     } else if (dataAtual > lote4Fim) {
