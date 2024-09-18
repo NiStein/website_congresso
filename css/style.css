@@ -5,6 +5,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 /* Estilo da barra de rolagem */
+.hidden {
+    display: none;
+}
+.more-text {
+    display: none;
+}
+.show-more-button {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}
+
 body::-webkit-scrollbar {
     width: .3em;
 }
@@ -423,6 +435,23 @@ p {
     text-align: center;
 }
 
+.container-info h4{
+    color: #ebebeb;
+    background-color: #fd1d1d;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 30px;
+}
+
+.container-info2 {
+    margin: 20px;
+    text-align: center;
+}
+
+.container-info2 thead{
+    background-color: #e66100;
+} 
+
 /* Estilo e variações de cards */
 /* --------------------------------------- */
 .card-container {
@@ -535,7 +564,7 @@ p {
     display: grid;
     text-align: left;
     list-style-type: disc;
-    grid-template-columns: repeat(3, 2fr);
+    grid-template-columns: repeat(2, 2fr);
 }
 
 .info-box ul li {
@@ -581,12 +610,7 @@ p {
     animation: fadeEffect 1s; /* Animação de transição suave */
 }
 
-.tabcontent ul{
-    padding: 0;
-    columns: 2;
-    column-gap: 20px;
 
-} 
 
 
 .tabcontent ul li{

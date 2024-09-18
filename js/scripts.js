@@ -12,6 +12,19 @@ courses.forEach(course => {
     });
 });
 
+function toggleText() {
+    const moreText = document.querySelector('.more-text');
+    const button = document.querySelector('.show-more-button');
+    
+    if (moreText.classList.contains('hidden')) {
+        moreText.classList.remove('hidden');
+        button.textContent = 'Mostrar menos';
+    } else {
+        moreText.classList.add('hidden');
+        button.textContent = 'Mostrar mais';
+    }
+}
+
 function openTab(evt, tabName) {
     var i, tabcontent, tablinks;
 
@@ -62,6 +75,66 @@ function atualizarValoresIngressos() {
     } else if (dataAtual > lote4Fim) {
         estudanteBox.textContent = 'Inscrições Encerradas'
         demaisBox.textContent = 'Inscrições Encerradas'
+    }
+};
+
+function atualizarValoresIngressosOficinas() {
+    const dataAtual = new Date();
+    
+    const lote1Fim = new Date('2024-10-31');
+    const lote2Inicio = new Date('2024-11-01');
+    const lote2Fim = new Date('2024-12-31');
+    const lote3Inicio = new Date('2025-01-01');
+    const lote3Fim = new Date('2025-02-28');
+    const lote4Inicio = new Date('2025-03-01');
+    const lote4Fim = new Date('2025-05-25')
+    
+    const estudanteBox = document.querySelector('.card.studantofice p');
+    const demaisBox = document.querySelector('.card.entireofice p');
+
+    
+    if (dataAtual <= lote1Fim) {
+        estudanteBox.textContent = 'R$ 30,00';
+        demaisBox.textContent = 'R$ 50,00';
+    } else if (dataAtual >= lote2Inicio && dataAtual <= lote2Fim) {
+        estudanteBox.textContent = 'R$ 40,00';
+        demaisBox.textContent = 'R$ 60,00';
+    } else if (dataAtual >= lote3Inicio && dataAtual <= lote3Fim) {
+        estudanteBox.textContent = 'R$ 50,00';
+        demaisBox.textContent = 'R$ 70,00';
+    } else if (dataAtual >= lote4Inicio && dataAtual <= lote4Fim) {
+        estudanteBox.textContent = 'R$ 60,00'
+        demaisBox.textContent = 'R$ 80,00'
+    } else if (dataAtual > lote4Fim) {
+        estudanteBox.textContent = 'Inscrições Encerradas'
+        demaisBox.textContent = 'Inscrições Encerradas'
+    }
+};
+
+function atualizarValoresTrabalhos() {
+    const dataAtual = new Date();
+    
+    const lote1Fim = new Date('2024-10-31');
+    const lote2Inicio = new Date('2024-11-01');
+    const lote2Fim = new Date('2024-12-31');
+    const lote3Inicio = new Date('2025-01-01');
+    const lote3Fim = new Date('2025-02-28');
+    const lote4Inicio = new Date('2025-03-01');
+    const lote4Fim = new Date('2025-05-25')
+    
+    const unicaBox = document.querySelector('.card.unica p');
+
+    
+    if (dataAtual <= lote1Fim) {
+        unicaBox.textContent = 'R$ 130,00';
+    } else if (dataAtual >= lote2Inicio && dataAtual <= lote2Fim) {
+        unicaBox.textContent = 'R$ 200,00';
+    } else if (dataAtual >= lote3Inicio && dataAtual <= lote3Fim) {
+        unicaBox.textContent = 'R$ 250,00';
+    } else if (dataAtual >= lote4Inicio && dataAtual <= lote4Fim) {
+        unicaBox.textContent = 'R$ 300,00'
+    } else if (dataAtual > lote4Fim) {
+        unicaBox.textContent = 'Inscrições Encerradas'
     }
 };
 

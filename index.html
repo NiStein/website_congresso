@@ -22,8 +22,8 @@
                 <div class="text-info">
                     <h2>CONIAD - Congresso Internacional de Administração </h2>
                     <p><i class="far fa-calendar icon"></i> 27 a 30 de Maio de 2025 </p>
-                    <p><i class="far fa-clock icon"></i> A definir </p>
-                    <p><i class="fas fa-map-marker-alt icon"></i> Teatro do Sesc - Centro Cultura Sesc Cajuina</p>
+                    <p><i class="far fa-clock icon"></i>08h00 às 12h00 - 14h00 às 17h00 - 18h30 às 21h00</p>
+                    <p><i class="fas fa-map-marker-alt icon"></i>Teatro do SESC - Centro Cultural</p>
                 </div>
                 <a href="#inscription" class="btn course01-color-btn">Quero me inscrever!</a>
             </div>
@@ -55,6 +55,7 @@
         <section>
             <div class="tab">
                 <a class="tablink" onclick="openTab(event, 'TemaCentral')" id="defaultOpen"><h5>TEMA CENTRAL</h5></a>
+                <a class="tablink" onclick="openTab(event, 'Oficinas')" id="defaultOpen"><h5>OFICINAS</h5></a>
                 <a class="tablink" onclick="openTab(event, 'Palestras')"><h5>PALESTRAS</h5></a>
                 <a class="tablink" onclick="openTab(event, 'Recursos')"><h5>RECURSOS DIDÁTICOS</h5></a>
             </div>
@@ -63,6 +64,17 @@
                 <h3>Tema Central</h3>
                 <p>Gestão de Negócios e Empreendedorismo: desafios e estratégias na atualidade!</p>
             </div>
+
+            <div id="Oficinas" class="tabcontent info-box">
+                <h3>Oficinas</h3>
+                <ul>
+                    <li>Oficina I: Inovação e Startups <br>Prof. Dr. especialista na área<br>27/05/25 - 8h às 13h<br>Certificado Extra de 05h/a</li>
+                    <li>Oficina II: Empreendedorismo e Varejo <br>Prof. Dr. especialista na área<br>28/05/25 - 8h às 13h<br>Certificado Extra de 05h/a</li>
+                    <li>Oficina III: Pesquisa Científica para Graduação, Mestrado e Doutorado<br>Prof. Dr. Cristiano Macedo - IFMA, Autor de obras nesta área<br>29/05/25 - 8h às 13h<br>Certificado Extra de 05h/a</li>
+                    <li>Oficina IV: Hidrogênio Verde, Sustentabilidade e Novos Empreendimentos<br>Prof. Dr. Haroldo - IFPI, Especialista na área<br>30/05/25 - 8h às 13h<br>Certificado extra de 05h/a</li>
+                </ul>
+            </div>
+
             <div id="Palestras" class="tabcontent info-box">
                 <h3>Palestras e Conferências</h3>
                 <ul>
@@ -98,15 +110,171 @@
             <h2>Nossos Ministrantes</h2>
             <div class="card-container">
                 <div class="card card-style-02">
-                    <img src="assets/candidato icon.png" alt="Imagem do candidato">
+                    <img src="assets/haroldo luis.jpeg" alt="Imagem do candidato">
                     <div class="card-info">
-                        <h5>A definir</h5>
-                        <p></p>
+                        <h5>Prof.Dr. Haroldo Luis Sousa Neres / IFPI</h5>
+                        <p>Professor do IFPI Campus Parnaíba 
+                        <span class="more-text hidden"> experiência em Química, Biotecnologia e Educação Ambiental. Doutor em Biotecnologia, Mestre em Química e Especialista em Educação Profissional e Tecnológica, 
+                        atua em pesquisas e projetos voltados para Energias Renováveis e preservação da APA do Delta do Parnaíba. 
+                        Coordenador de projetos de pesquisas sobre Energias Renováveis e 
+                        Coordenador de Projetos de extensão sobre Educação Ambiental, com ênfase na Educação Profissional e Tecnológica</span>
+                        <span class="show-more-button" onclick="toggleText()">Mostrar mais</span>
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
     </article>
+
+    <div class="container-info2">
+        <h2>Programação do CONIAD</h2><br>
+        <table>
+            <thead>
+                <tr>
+                    <th>Número</th>
+                    <th>Data</th>
+                    <th>Teatro Sílvio Mendes</th>
+                    <th>Auditorio 02</th>
+                    <th>Salas de Aula 01 e 02</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>27/05/2024<br>
+                        (Ter/Manhã)<br>
+                        8h00 às 12h00
+                    </td>
+                    <td>------</td>
+                    <td>Oficina I</td>
+                    <td>Defesa de Trabalhos Científicos</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>27/05/2025<br>
+                        (Ter/Tarde)<br>
+                        14h00 às 17h00
+                    </td>
+                    <td>------</td>
+                    <td>------</td>
+                    <td>------</td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>27/05/2025<br>
+                        (Ter/Noite)<br>
+                        18h30 às 21h30
+                    </td>
+                    <td>- Solenidade de Abertura Oficial do CONIAD<br>- Conferência 01</td>
+                    <td>------</td>
+                    <td>------</td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>28/05/2025<br>
+                        (Qua/Manhã)<br>
+                        8h00 às 12h00
+                    </td>
+                    <td>------</td>
+                    <td>Oficina II</td>
+                    <td>Defesa de Trabalhos Cientifícos</td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>28/05/2025<br>
+                        (Qua/Tarde)<br>
+                        14h00 às 17h00
+                    </td>
+                    <td>- Palestras<br>- Conferência 02</td>
+                    <td>------</td>
+                    <td>------</td>
+                </tr>
+
+                <tr>
+                    <td>6</td>
+                    <td>28/05/2025<br>
+                        (Qua/Noite)<br>
+                        18h30 às 21h00
+                    </td>
+                    <td>- Palestras<br>- Conferência 03</td>
+                    <td>------</td>
+                    <td>------</td>
+                </tr>
+
+                <tr>
+                    <td>7</td>
+                    <td>29/05/2025<br>
+                        (Qui/Manhã)<br>
+                        8h00 às 12h00
+                    </td>
+                    <td>------</td>
+                    <td>Oficina III</td>
+                    <td>Defesa de Trabalhos Cientifícos</td>
+                </tr>
+
+                <tr>
+                    <td>8</td>
+                    <td>29/05/2025<br>
+                        (Qui/Tarde)<br>
+                        14h00 às 17h00
+                    </td>
+                    <td>- Palestras<br>- Conferência 04</td>
+                    <td>------</td>
+                    <td>------</td>
+                </tr>
+
+                <tr>
+                    <td>9</td>
+                    <td>29/05/2025<br>
+                        (Qui/Noite)<br>
+                        18h30 às 21h00
+                    </td>
+                    <td>- Palestras<br>- Conferência 05</td>
+                    <td>------</td>
+                    <td>------</td>
+                </tr>
+
+                <tr>
+                    <td>10</td>
+                    <td>30/05/2025<br>
+                        (Sex/Manhã)<br>
+                        8h00 às 12h00
+                    </td>
+                    <td>------</td>
+                    <td>Oficina IV</td>
+                    <td>Defesa de Trabalhos Cientifícos</td>
+                </tr>
+
+                <tr>
+                    <td>11</td>
+                    <td>30/05/2025<br>
+                        (Sex/Tarde)<br>
+                        14h00 às 17h00
+                    </td>
+                    <td>- Palestras<br>- Conferência 06</td>
+                    <td>------</td>
+                    <td>------</td>
+                </tr>
+
+                <tr>
+                    <td>12</td>
+                    <td>30/05/2025<br>
+                        (Sex/Noite)<br>
+                        18h00 às 21h00
+                    </td>
+                    <td>- Solenidade de Encerramento do CONIAD<br>- Conferência 07</td>
+                    <td>------</td>
+                    <td>------</td>
+                </tr>      
+            
+            </tbody>
+        </table>
+    </div>
 
     <section id="inscription">
         <h2>Nosso Congresso conta com lotes promocionais e vagas limitadas!</h2>
@@ -123,7 +291,7 @@
         </div>
 
         <div class="container-info">
-            <h2>Lotes</h2>
+            <h2>Lotes da Inscrição do Congresso</h2>
             <table>
                 <thead>
                     <tr>
@@ -154,15 +322,103 @@
                 </tbody>
             </table>
         </div>
+    </section>
 
-        <section id="localizacao">
+    <section id="inscription">
+        <h2>Aproveite os nossos lotes promocionais das nossas Oficinas!</h2>
+        <div class="card-container">
+            <div class="card studantofice">
+                <h3>Estudantil</h3>
+                <p></p>
+            </div>
+    
+            <div class="card entireofice">
+                <h3>Integral</h3>
+                <p></p>
+            </div>  
+        </div>
+    
+        <div class="container-info">
+            <h2>Lotes da Inscrição das Oficinas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Categoria</th>
+                        <th>1º Lote (Até 31/10)</th>
+                        <th>2º Lote (De 01/11 a 31/12)</th>
+                        <th>3º Lote (De 01/01/2025 a 28/02/2025)</th>
+                        <th>4º Lote (De 01/03/2025 a 25/05/2025)</th>
+                    </tr>
+                </thead>
+    
+                <tbody>
+                    <tr>
+                        <td>Estudantil</td>
+                        <td>R&dollar; 30,00 (em 12x no cartão ou Pix)</td>
+                        <td>R&dollar; 40,00 (em 12x no cartão ou Pix)</td>
+                        <td>R&dollar; 50,00 (em 12x no cartão ou Pix)</td>
+                        <td>R&dollar; 60,00 (em 12x no cartão ou Pix)</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Integral</td>
+                        <td>R&dollar; 50,00 (em 12x no cartão ou Pix)</td>
+                        <td>R&dollar; 60,00 (em 12x no cartão ou Pix)</td>
+                        <td>R&dollar; 70,00 (em 12x no cartão ou Pix)</td>
+                        <td>R&dollar; 80,00 (em 12x no cartão ou Pix)</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+    </section>
+
+    <section id="inscription">
+        <h2>Arrase em sua Defesa de Trabalho Cientifíco!</h2>
+        <div class="card-container">
+            <div class="card unica">
+                <h3>Inscrição Única</h3>
+                <p></p>
+            </div>
+      
+        </div>
+        
+        <div class="container-info">
+            <h2>Lotes da Inscrição das Oficinas</h2><br>
+            <h4>Obs: Em grupos de até 05 membros!</h3><br>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Categoria</th>
+                        <th>1º Lote (Até 31/10)</th>
+                        <th>2º Lote (De 01/11 a 31/12)</th>
+                        <th>3º Lote (De 01/01/2025 a 28/02/2025)</th>
+                        <th>4º Lote (De 01/03/2025 a 25/05/2025)</th>
+                    </tr>
+                </thead>
+        
+                <tbody>
+                    <tr>
+                        <td>Única</td>
+                        <td>R&dollar; 30,00 (em 12x no cartão ou Pix)</td>
+                        <td>R&dollar; 40,00 (em 12x no cartão ou Pix)</td>
+                        <td>R&dollar; 50,00 (em 12x no cartão ou Pix)</td>
+                        <td>R&dollar; 60,00 (em 12x no cartão ou Pix)</td>
+                    </tr>
+        
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="localizacao">
             <h2>LOCALIZAÇÃO</h2>
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15896.407352861765!2d-42.7821533!3d-5.0872304!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x78e3b15fb7184c3%3A0x92053ede1a6fc901!2sSesc%20Caju%C3%ADna!5e0!3m2!1spt-BR!2sbr!4v1726535264459!5m2!1spt-BR!2sbr" width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
-        <!-- Script para atualizar valores -->
-        <script src="js/scripts.js"></script>
+    </section>
 
-        <div class="batch-time">
+    <!-- Script para atualizar valores -->
+    <script src="js/scripts.js"></script>
+
+    <div class="batch-time">
             <div id="rd-counter-lzsxjnwr">
                 <div class="counter-days">
                     <h3>Faltam</h3>
@@ -188,8 +444,8 @@
                     <span class="label">Segundos</span>
                 </div> -->
             </div>
-        </div>
-    </section>
+    </div>
+
     <!-- Script para contagem regressiva  -->
     <script src="js/scripts.js"></script>
 
