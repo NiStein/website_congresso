@@ -86,7 +86,7 @@
 /* Media Queries para Responsividade do Modal */
 @media (max-width: 768px) {
     .modal-content {
-        max-width: 80%; /* Limite de largura do modal em tablets */
+        max-width: 90%; /* Limite de largura do modal em tablets */
     }
 
     .modal-name {
@@ -108,7 +108,7 @@
     }
 
     .modal-info {
-        font-size: 0.8rem; /* Tamanho da fonte menor em celulares */
+        font-size: 0.7rem; /* Tamanho da fonte menor em celulares */
     }
 }
 
