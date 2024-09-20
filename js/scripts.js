@@ -12,22 +12,9 @@ courses.forEach(course => {
     });
 });
 
-function toggleText() {
-    const moreText = document.querySelector('.more-text');
-    const button = document.querySelector('.show-more-button');
-
-    if (moreText.classList.contains('hidden')) {
-        moreText.classList.remove('hidden');
-        button.textContent = 'Mostrar menos';
-    } else {
-        moreText.classList.add('hidden');
-        button.textContent = 'Mostrar mais';
-    }
-}
-
 function openTab(evt, tabName) {
     var i, tabcontent, tablinks;
-
+    
     // Esconde todo o conteúdo das tabs
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
@@ -120,7 +107,7 @@ function atualizarValoresTrabalhos() {
     const lote3Inicio = new Date('2025-01-01');
     const lote3Fim = new Date('2025-02-28');
     const lote4Inicio = new Date('2025-03-01');
-    const lote4Fim = new Date('2025-05-25')
+    const lote4Fim = new Date('2025-04-27')
 
     const unicaBox = document.querySelector('.card.unica p');
 

@@ -5,26 +5,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 /* Estilo da barra de rolagem */
-.hidden {
-    display: none;
-}
-.more-text {
-    display: none;
-}
-.show-more-button {
-    cursor: pointer;
-    color: blue;
-    text-decoration: underline;
-}
 
 body::-webkit-scrollbar {
     width: .3em;
 }
-   
+
 body::-webkit-scrollbar-track {
     box-shadow: transparent;
 }
-   
+
 body::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background-color: #ffbc51;
@@ -40,7 +29,8 @@ body::-webkit-scrollbar-thumb {
     font-family: "Inter", sans-serif;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     scroll-behavior: smooth;
     background-color: #091931;
@@ -70,8 +60,10 @@ p {
 /* --------------------------------------- */
 .header {
     display: flex;
-    height: 100%; /* Ocupa toda a altura da tela */
-    width: 100%;  /* Ocupa toda a largura da tela */
+    height: 100%;
+    /* Ocupa toda a altura da tela */
+    width: 100%;
+    /* Ocupa toda a largura da tela */
     overflow: hidden;
     flex-wrap: wrap;
 }
@@ -114,17 +106,19 @@ p {
     height: 2px;
     background-color: white;
     transition: width 0.4s ease, left 0.4s ease;
-    
+
     position: absolute;
-    left: 0%; /* Centraliza a linha por padrão */
-    bottom: -5px; /* Distância do h2 */
+    left: 0%;
+    /* Centraliza a linha por padrão */
+    bottom: -5px;
+    /* Distância do h2 */
 }
 
 .course-info p {
     font-size: 20px;
 }
 
-.course-info i{
+.course-info i {
     font-size: 25px;
     margin-right: 1em;
 }
@@ -156,8 +150,10 @@ p {
 
 /* Quando o container é selecionado, a linha embaixo do h2 se expande */
 .course.selected .course-info h2::after {
-    left: 0; /* Alinha a linha ao início do texto */
-    width: 100%; /* Expande a linha para ocupar toda a largura do h2 */
+    left: 0;
+    /* Alinha a linha ao início do texto */
+    width: 100%;
+    /* Expande a linha para ocupar toda a largura do h2 */
 }
 
 /* Estilo e variações de botões */
@@ -269,7 +265,7 @@ p {
 
     .header {
         flex-direction: column;
-        
+
     }
 
     .course-info {
@@ -435,7 +431,7 @@ p {
     text-align: center;
 }
 
-.container-info h4{
+.container-info .obs {
     color: #ebebeb;
     background-color: #fd1d1d;
     border-radius: 10px;
@@ -448,9 +444,9 @@ p {
     text-align: center;
 }
 
-.container-info2 thead{
+.container-info2 thead {
     background-color: #e66100;
-} 
+}
 
 /* Estilo e variações de cards */
 /* --------------------------------------- */
@@ -474,8 +470,8 @@ p {
 .card-style-01 {
     padding: 40px;
     justify-content: center;
-    background: linear-gradient(to top right, #fff, #D0E2FD) ;
-      
+    background: linear-gradient(to top right, #fff, #D0E2FD);
+
 }
 
 .card-style-02 {
@@ -523,21 +519,70 @@ p {
 
 .card-info {
     flex: 1;
-    padding: 10px;   
+    padding: 10px;
 }
 
-.studant, .entire {
+.studant,
+.entire {
     overflow: hidden;
 }
 
 /* Estilo de cards para cursos */
-.studant h3, .entire h3 {
+
+.col2 img {
+    width: 180px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.col2{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.studant h3,
+.entire h3 {
     color: #fff;
     padding: 20px;
     background-color: #091931;
 }
 
-.studant p, .entire p {
+.studant p,
+.entire p {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    color: #252B42;
+    align-items: center;
+    justify-content: center;
+}
+
+.studantofice h3,
+.entireofice h3 {
+    color: #fff;
+    padding: 20px;
+    background-color: #091931;
+}
+
+.studantofice p,
+.entireofice p {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    color: #252B42;
+    align-items: center;
+    justify-content: center;
+}
+
+.unica h3 {
+    color: #fff;
+    padding: 20px;
+    background-color: #091931;
+}
+
+.unica {
     flex: 1;
     padding: 20px;
     display: flex;
@@ -607,20 +652,25 @@ p {
     display: none;
     text-align: left;
     border-top: none;
-    animation: fadeEffect 1s; /* Animação de transição suave */
+    animation: fadeEffect 1s;
+    /* Animação de transição suave */
 }
 
 
 
-
-.tabcontent ul li{
+.tabcontent ul li {
     padding: 10px 0;
     margin-bottom: 5px;
 }
 
 @keyframes fadeEffect {
-    from {opacity: 0;}
-    to {opacity: 1;}
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .paragraph {
@@ -641,23 +691,26 @@ p {
         display: flex;
         overflow-x: auto;
         flex-direction: row;
-        scroll-snap-type: x mandatory; /* Adiciona o scroll snap */
-        -webkit-overflow-scrolling: touch; /* Suaviza o scroll em dispositivos iOS */
+        scroll-snap-type: x mandatory;
+        /* Adiciona o scroll snap */
+        -webkit-overflow-scrolling: touch;
+        /* Suaviza o scroll em dispositivos iOS */
     }
 
     .tab::-webkit-scrollbar {
         display: none;
-      }
+    }
 
     .tablink {
         width: 60%;
         flex: 0 0 auto;
         text-align: center;
         margin-bottom: 10px;
-        scroll-snap-align: start; /* Cada tablink "trava" no início */
+        scroll-snap-align: start;
+        /* Cada tablink "trava" no início */
     }
 
-    .tablink:last-child{
+    .tablink:last-child {
         margin-right: 150px;
     }
 
@@ -690,7 +743,8 @@ p {
     }
 
     .card {
-        width: 80%; /* Ocupa toda a largura da tela */
+        width: 80%;
+        /* Ocupa toda a largura da tela */
         margin: 20px 0;
     }
 
@@ -698,8 +752,10 @@ p {
         padding: 20px;
     }
 
-    .card h3, .card p {
-        font-size: 1em; /* Ajusta o tamanho das fontes */
+    .card h3,
+    .card p {
+        font-size: 1em;
+        /* Ajusta o tamanho das fontes */
     }
 }
 
@@ -859,6 +915,7 @@ p {
         font-size: 1.1em;
     }
 }
+
 /* Estilo para sessão de inscrições */
 /* --------------------------------------- */
 #inscription {
@@ -893,7 +950,8 @@ table {
     border-collapse: collapse;
 }
 
-th, td {
+th,
+td {
     padding: 20px;
     font-size: 0.9em;
     text-align: center;
@@ -941,9 +999,9 @@ tbody tr:hover {
     display: flex;
     padding: 0 20px;
     flex-direction: row;
-    
+
     position: absolute;
-    right: 0;   
+    right: 0;
 }
 
 .counter-days {
@@ -976,13 +1034,16 @@ tbody tr:hover {
         font-size: 1.2em;
     }
 
-    .studant, .entire {
+    .studant,
+    .entire {
         flex: 1;
         height: 150px;
         margin: 0 10px;
     }
 
-    table, th, td {
+    table,
+    th,
+    td {
         font-size: 0.8em;
         padding: 10px;
     }
@@ -997,7 +1058,9 @@ tbody tr:hover {
         font-size: 1.4em;
     }
 
-    table, th, td {
+    table,
+    th,
+    td {
         font-size: 0.9em;
         padding: 15px;
     }
@@ -1013,7 +1076,9 @@ tbody tr:hover {
         font-size: 1.5em;
     }
 
-    table, th, td {
+    table,
+    th,
+    td {
         font-size: 1em;
         padding: 20px;
     }
@@ -1028,7 +1093,9 @@ tbody tr:hover {
         font-size: 1.5em;
     }
 
-    table, th, td {
+    table,
+    th,
+    td {
         font-size: 1em;
         padding: 20px;
     }
@@ -1066,6 +1133,7 @@ tbody tr:hover {
     color: #25D366;
     transition: color 1s ease, transform 1s ease;
 }
+
 .icon-row .icon-whatsapp:hover {
     color: #43df7c;
     transform: scale(1.1);
@@ -1084,7 +1152,8 @@ tbody tr:hover {
 
 .icon-row .icon-instagram:hover {
     transform: scale(1.1);
-    animation: gradientMove 3s infinite ease; /* Animação em loop contínuo */
+    animation: gradientMove 3s infinite ease;
+    /* Animação em loop contínuo */
 }
 
 .logo-footer {
@@ -1097,9 +1166,9 @@ tbody tr:hover {
     display: inline-block;
     position: relative;
     cursor: pointer;
-  }
-  
-  .dropdownContent {
+}
+
+.dropdownContent {
     z-index: 1;
     display: none;
     min-width: 160px;
@@ -1107,37 +1176,38 @@ tbody tr:hover {
     position: absolute;
     background-color: #fafafa;
     box-shadow: 0 8px 16px 0px #0000000f;
-  }
-  
-  .dropdownContent a {
+}
+
+.dropdownContent a {
     display: block;
     text-align: left;
     color: #252B42;
     border-radius: 1em;
     padding: 12px 16px;
     text-decoration: none;
-  }
-  
-  .dropdownContent a:hover {
+}
+
+.dropdownContent a:hover {
     background-color: #dedede;
-  }
-  
-  .dropdownContent a:active {
+}
+
+.dropdownContent a:active {
     background-color: #0000001b;
-  }
-  
-  .dropdown:hover .dropdownContent {
+}
+
+.dropdown:hover .dropdownContent {
     display: inline-block;
 
     position: absolute;
     bottom: 20px;
-  }
-  
+}
+
 
 @keyframes gradientMove {
     0% {
         background-position: 0% 50%;
     }
+
     100% {
         background-position: 90% 50%;
     }

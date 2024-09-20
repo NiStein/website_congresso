@@ -1,0 +1,136 @@
+/*Dialog e botoes dos modais*/
+.card-container-Modal{
+    display: flex;             /* Organiza os cards lado a lado */
+    flex-wrap: wrap;           /* Permite que os cards quebrem para a próxima linha, se necessário */
+    justify-content: center;   /* Centraliza os cards no container */
+    gap: 20px;                 /* Espaçamento entre os cards */
+    max-width: 1200px;         /* Limita a largura máxima do container */
+    margin: 0 auto;            /* Centraliza o container na página */
+    padding: 20px;
+}
+
+.card2 {
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.card2:hover {
+    transform: scale(1.05);
+}
+
+.card-img {
+    width: 100%;
+    height: 50%;
+    border-radius: 8px;
+}
+
+.card-name {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Estilos para o Modal */
+.modal {
+    display: none; /* Oculto por padrão */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #001F3F;
+    width: 50%;
+    height: 60%;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+}
+
+
+.modal-img {
+    width: 150px;
+    height: auto;
+    border-radius: 40px;
+}
+
+.modal-name {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.modal-info {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* Botão de Fechar o Modal */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Media Queries para Responsividade do Modal */
+@media (max-width: 768px) {
+    .modal-content {
+        max-width: 80%; /* Limite de largura do modal em tablets */
+    }
+
+    .modal-name {
+        font-size: 1.2rem; /* Tamanho da fonte menor em tablets */
+    }
+
+    .modal-info {
+        font-size: 0.9rem; /* Tamanho da fonte menor em tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-content {
+        max-width: 95%; /* Limite de largura do modal em celulares */
+    }
+
+    .modal-name {
+        font-size: 1.1rem; /* Tamanho da fonte menor em celulares */
+    }
+
+    .modal-info {
+        font-size: 0.8rem; /* Tamanho da fonte menor em celulares */
+    }
+}
+
+/* Informacoes das incriscoes */
+
+.infoIncricao{
+    background-color: #001F3F;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 70%;
+}
+
+
+.infoIncricao ul li{
+    margin-bottom: 10px;
+    margin-top: 7px;
+    list-style: none;
+}
+
+@media screen {
+    
+}
+
+
