@@ -542,6 +542,7 @@ p {
     flex-direction: row;
     justify-content: space-around;
 }
+
 .studant h3,
 .entire h3 {
     color: #fff;
@@ -1214,6 +1215,13 @@ tbody tr:hover {
 }
 
 @media (max-width: 600px) {
+    .col2 img {
+        width: 80px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    
     .row {
         width: 100%;
         justify-content: space-around;
@@ -1234,6 +1242,13 @@ tbody tr:hover {
 
 
 @media (min-width: 601px) and (max-width: 768px) {
+    .col2 img {
+        width: 125px;
+        padding: 12px;
+        display: flex;
+        justify-content: center;
+    }
+
     .row {
         width: 90%;
         justify-content: space-between;
@@ -1254,6 +1269,13 @@ tbody tr:hover {
 
 
 @media (min-width: 769px) and (max-width: 992px) {
+    .col2 img {
+        width: 150px;
+        padding: 14px;
+        display: flex;
+        justify-content: center;
+    }
+
     .row {
         width: 85%;
     }
@@ -1273,6 +1295,13 @@ tbody tr:hover {
 
 
 @media (min-width: 993px) and (max-width: 1200px) {
+    .col2 img {
+        width: 160px;
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+    }
+
     .row {
         width: 80%;
     }
