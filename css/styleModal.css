@@ -25,8 +25,10 @@
 
 .card-img {
     width: 100%;
-    height: 50%;
+    height: 70%;
     border-radius: 8px;
+    object-fit: cover;
+
 }
 
 .card-name {
@@ -60,8 +62,9 @@
 
 .modal-img {
     width: 150px;
-    height: auto;
+    height: 250px;
     border-radius: 40px;
+    object-fit: cover;
 }
 
 .modal-name {
@@ -93,6 +96,11 @@
         font-size: 1.2rem; /* Tamanho da fonte menor em tablets */
     }
 
+    .modal-img{
+        width: 120px;
+        height: 170px;
+    }
+
     .modal-info {
         font-size: 0.9rem; /* Tamanho da fonte menor em tablets */
     }
@@ -101,10 +109,16 @@
 @media (max-width: 480px) {
     .modal-content {
         max-width: 95%; /* Limite de largura do modal em celulares */
+        height: 50%;
     }
 
     .modal-name {
-        font-size: 1.1rem; /* Tamanho da fonte menor em celulares */
+        font-size: 1.0rem; /* Tamanho da fonte menor em celulares */
+    }
+
+    .modal-img{
+        width: 100px;
+        height: 140px;
     }
 
     .modal-info {

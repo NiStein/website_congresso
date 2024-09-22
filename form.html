@@ -17,8 +17,8 @@
         <section class="container">
             <header>
                 <h1>Congresso Acadêmico: Inscrições</h1>
-                <p>Local: Teatro do Sesc - Centro Cultura Sesc Cajuina</p>
-                <p>Data: A definir</p>
+                <p>Local: Teatro do SESC - Centro Cultural</p>
+                <p>Data: 27 a 30 de Maio de 2025</p>
             </header>
             <form class="form" name="submit-to-google-sheet" id="inscricao-form" action="#" method="post" autocomplete="on">
                 <div class="input-box">
@@ -35,6 +35,7 @@
                     </div>
                     <input type="email" name="email" id="email" placeholder="Email" autocomplete="email" required maxlength="30">
                 </div>
+
                 <div class="input-box">
                     <div class="box-itens">
                         <span class="material-symbols-outlined">phone</span>
@@ -42,6 +43,64 @@
                     </div>
                     <input type="tel" name="telefone" id="telefone" placeholder="Telefone: (xx) xxxxx-xxxx" autocomplete="tel" required maxlength="15">
                 </div>
+
+                <div class="selecao-box">
+                    <h3>Selecione as suas Inscrições</h3>
+                    <div class="all">
+
+                        <h4>1.0 Inscrição para as Atividades Gerais do CONIAD</h4>
+                        <div class="selecao-geral">
+                            <div class="seletor">
+                                <input class="input-inscricao" type="radio" id="geral-sim" name="geral" checked/>
+                                <label for="geral-sim">Sim</label>
+                            </div>
+
+                            <div class="seletor">
+                                <input class="input-inscricao" type="radio" id="geral-nao" name="geral"/>
+                                <label for="geral-nao">Não</label>
+                            </div>
+                        </div>
+
+                        <h4>2.0 Inscrições para as Oficinas</h4>
+                        <div class="selecao-oficina">
+
+                            <div class="seletor">
+                                <input class="input-inscricao" type="checkbox" id="oficina1" name="oficina" checked>
+                                <label for="oficina1">Oficina I</label>
+                            </div>
+
+                            <div class="seletor">
+                                <input class="input-inscricao" type="checkbox" id="oficina2" name="oficina2">
+                                <label for="oficina2">Oficina II</label>
+                            </div>
+
+                            <div class="seletor">
+                                <input class="input-inscricao" type="checkbox" id="oficina3" name="oficina3">
+                                <label for="oficina3">Oficina III</label>
+                            </div>
+
+                            <div class="seletor">
+                                <input class="input-inscricao"type="checkbox" id="oficina4" name="oficina4" >
+                                <label for="oficina4">Oficina IV</label>
+                            </div>
+                        </div>
+
+                        <h4>3.0 Inscrição para o Trabalho Cientifíco</h4>
+                        <div class="selecao-trabalho">
+                            <div class="seletor">
+                                <input class="input-inscricao" type="radio" id="trabalho-sim" name="trabalho" checked/>
+                                <label for="trabalho-sim">Sim</label>
+                            </div>
+
+                            <div class="seletor">                       
+                                <input class="input-inscricao" type="radio" id="trabalho-nao" name="trabalho"/>
+                                <label for="trabalho-nao">Não</label>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
         
                 <div class="input-box">
                     <div class="box-itens">

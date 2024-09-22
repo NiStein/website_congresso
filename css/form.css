@@ -71,6 +71,8 @@ body {
     align-items: center;
     column-gap: 5px;
 }
+
+
 .input-box span{
     font-size: 24px;
 }
@@ -92,6 +94,61 @@ body {
     border: 1px solid #0a0b2c;
     border-radius: 6px;
     padding: 0 15px;
+}
+
+.form .selecao-box{
+    margin-top: 20px;
+    
+}
+
+.form h3{
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.form h4{
+    margin-top: 14px;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.form :where(.selecao-geral, .selecao-oficina, .selecao-trabalho, .seletor) {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+
+.seletor label {
+    margin: 0;
+    margin-top: 10px;
+}
+
+.input-inscricao{
+    width: auto;
+    transform: scale(1.5); 
+    margin-right: -1px; 
+}
+
+
+.seletor{
+    display: flex;
+    align-items: center;
+}
+
+
+.seletor input{
+    margin-left: 10px;
+}
+
+.form :where(.seletor input, .seletor label) {
+    cursor: pointer;
 }
 
 .form .column1{
@@ -169,4 +226,8 @@ body .backBTN{
     .form .column{
         flex-wrap: wrap;
     }
+    .form :where(.selecao-geral, .selecao-oficina, .selecao-trabalho, .seletor){
+        row-gap: 12px;
+    }
+
 }
