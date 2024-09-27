@@ -293,6 +293,9 @@ p {
 
 /* Telas de 601px a 768px (tablets em modo retrato) */
 @media (min-width: 601px) and (max-width: 768px) {
+    html{
+        width: 100%;
+    }
     h2 {
         font-size: 28px;
     }
@@ -1357,10 +1360,11 @@ tbody tr:hover {
     color: white;
 }
 
+/* Padrão para telas menores */
 #localizacao iframe {
-    border: 0;
-    height: 100%;
-    max-height: 500px;
+    width: 90%;
+    height: 300px; /* Altura menor em telas pequenas */
+    max-width: 100%;
 }
 
 @media (max-width: 600px) {
@@ -1401,7 +1405,8 @@ tbody tr:hover {
     }
 
     #localizacao iframe {
-        height: 70%;
+        width: 80%;
+        height: 400px; /* Aumenta um pouco a altura */
     }
 }
 
@@ -1421,7 +1426,7 @@ tbody tr:hover {
 
 @media (min-width: 1201px) {
     #localizacao {
-        padding: 20px;
+        padding: 40px;
     }
 
     #localizacao h2 {
@@ -1429,6 +1434,7 @@ tbody tr:hover {
     }
 
     #localizacao iframe {
-        height: 50%;
+        width: 70%;
+        height: 500px; /* Aumenta a altura para telas maiores */
     }
 }

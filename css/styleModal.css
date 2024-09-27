@@ -52,7 +52,7 @@
 .modal-content {
     background-color: #001F3F;
     width: 50%;
-    height: 60%;
+    height: 75%;
     padding: 20px;
     border-radius: 8px;
     text-align: center;
@@ -73,7 +73,10 @@
 }
 
 .modal-info {
-    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    font-size: 1.1rem;
     margin-top: 10px;
 }
 
@@ -90,6 +93,7 @@
 @media (max-width: 768px) {
     .modal-content {
         max-width: 90%; /* Limite de largura do modal em tablets */
+        height: 70%;
     }
 
     .modal-name {
@@ -109,7 +113,7 @@
 @media (max-width: 480px) {
     .modal-content {
         max-width: 95%; /* Limite de largura do modal em celulares */
-        height: 50%;
+        height: 87%;
     }
 
     .modal-name {
@@ -117,12 +121,13 @@
     }
 
     .modal-img{
-        width: 100px;
+        width: 110px;
         height: 140px;
     }
 
     .modal-info {
         font-size: 0.7rem; /* Tamanho da fonte menor em celulares */
+
     }
 }
 
